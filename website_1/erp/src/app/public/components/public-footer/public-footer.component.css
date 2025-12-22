@@ -1,0 +1,153 @@
+/* --- FOOTER SEKCE --- */
+.public-footer {
+    background-color: #1a1a2e; /* Tmavé fialové pozadí, ladí s formulářem */
+    color: #e0e0e0; /* Světlá barva textu pro kontrast */
+    padding: 60px 40px 20px; /* Více paddingu nahoře a po stranách, méně dole */
+    border-top: 3px solid rgba(116, 068, 128, 0.4); /* Jemný oddělovač nahoře */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.5); /* Jemný stín nahoru */
+}
+a{
+    text-decoration: none;
+    color: #b39ddb;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Umožní zalomení sekcí na menších obrazovkách */
+    justify-content: space-between; /* Rozprostře sekce rovnoměrně */
+    max-width: 1200px; /* Maximální šířka obsahu footeru */
+    margin: 0 auto; /* Centrování obsahu */
+    gap: 30px; /* Mezera mezi sekcemi */
+}
+
+.footer-section {
+    flex: 1; /* Každá sekce zaujme stejný prostor */
+    min-width: 220px; /* Minimální šířka před zalomením */
+    margin-bottom: 30px; /* Mezera pod sekcemi na menších obrazovkách */
+}
+
+.footer-section h3 {
+    color: #a67dff; /* Jasnější fialová pro nadpisy sekcí */
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.footer-section p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #c5aaff; /* Světlejší fialová pro běžný text */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Styly pro VŠECHNY odkazy v seznamech */
+.footer-section ul li a {
+    color: #b39ddb; /* Tmavší fialová pro všechny odkazy v seznamech */
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Pro transformaci */
+    font-weight: normal; /* Zruší případné tučné písmo */
+    text-shadow: none; /* Zruší případný text-shadow */
+}
+
+
+
+/* --- Styly pro OBRÁZKOVÉ sociální ikony --- */
+.social-links {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px; /* Mezera mezi ikonami */
+}
+
+.social-links a {
+    display: inline-block; /* Důležité pro efekty na img */
+    line-height: 1; /* Pomáhá zarovnání */
+}
+
+.social-links img {
+    width: 32px; /* Pevná velikost ikon */
+    height: 32px;
+    vertical-align: middle; /* Pro lepší zarovnání */
+    transition: filter 0.3s ease; /* Plynulá animace záře a jasu */
+    /* FILTRY ÚPLNĚ ODSTRANĚNY - ikony budou mít původní barvu */
+}
+
+
+
+/* Spodní část footeru s copyrightem */
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(47, 47, 47, 0.5); /* Jemnější oddělovač */
+    font-size: 0.85em;
+    color: #9a9a9b; /* Jemnější šedá pro copyright text */
+}
+
+/* --- Responzivní úpravy --- */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Sekce se stackují vertikálně */
+        align-items: center; /* Centrování obsahu */
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .footer-section ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrování odkazů */
+    }
+
+    .social-links {
+        justify-content: center; /* Centrování sociálních ikon */
+    }
+}
+
+@media (max-width: 480px) {
+    .public-footer {
+        padding: 40px 20px 15px;
+    }
+
+    .footer-section h3 {
+        font-size: 1.3em;
+    }
+
+    .footer-section p,
+    .footer-section ul li a {
+        font-size: 0.9em;
+    }
+
+    .social-links img {
+        width: 28px; /* Mírně menší ikony na mobilu */
+        height: 28px;
+    }
+}
+
+@media (min-width: 906px){
+    .footer-section ul li a:hover {
+    color: #a67dff; /* Změna barvy na světlejší fialovou při najetí */
+    transform: translateX(5px); /* Jemný posun doprava */
+}
+.social-links a:hover img {
+    /* Zvýraznění při najetí: jen zesvětlení a fialová záře */
+    filter: brightness(1.2) drop-shadow(0 0 10px rgba(166, 125, 255, 0.8)); /* Zesvětlení a výraznější fialová záře */
+}
+
+}
