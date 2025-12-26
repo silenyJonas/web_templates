@@ -1,20 +1,4 @@
 {
- "faq": {
-    "question_1": "What types of software can you develop?",
-    "answer_1": "Our focus is on complete software development from design to deployment. We build websites and applications, e-shops, mobile apps for iOS and Android, as well as desktop programs for both business and individual use. Our services also include advanced solutions based on artificial intelligence and process automation. In addition, we specialize in integrating various systems (e.g., payment gateways, ERP, CRM, or cloud services), as well as modifying and improving existing projects. We always look for a way to create or optimize a tailor-made solution that truly helps your business.",
-    "question_2": "How long does a project take to complete?",
-    "answer_2": "The development time always depends on the scope and complexity of the project. Simpler solutions, such as a presentation website or a small business site, can be ready within a few days to two weeks. More demanding projects, such as e-shops, portals, or complex web and mobile applications, can take several weeks to months, depending on the number of features, design requirements, or integrations with other systems. After the initial consultation, we'll prepare a realistic timeline with milestones so you know exactly how the development will proceed and when you can expect launch.",
-    "question_3": "How much does website or application development cost?",
-    "answer_3": "The price always depends on the scope and complexity of the project. A simple presentation website will have a different price than a full-fledged e-shop or a complex application with integrations and advanced features. The final amount is also influenced by the choice of technologies, design complexity, security requirements, or connections to other systems. Therefore, we assess each project individually and, after an initial consultation, we'll prepare a precise price quote along with a timeline. Transparency is a given—you always know what you're paying for, and we also offer various solution options according to your budget and priorities. This way, you can choose the path that best suits your needs and financial possibilities.",
-    "question_4": "How does collaboration usually work?",
-    "answer_4": "We start our collaboration with an initial consultation where we listen to your needs, goals, and feedback. Based on this information, we prepare a solution proposal, which includes the choice of suitable technologies, technical specifications, a design for the look and functionalities, a completion timeline, and a price quote. We'll present this process to you for approval. Once everything is approved, we move on to the actual development, testing, and subsequent launch of the project. We keep you continuously informed about the progress, involve you in key decisions, and ensure you have full control over the result.",
-    "question_5": "Do you also provide long-term support and maintenance?",
-    "answer_5": "Yes, we provide long-term support and maintenance because we know that the work doesn't end with a project's launch. Our services include regular system and library updates, performance and security monitoring, operational monitoring, data backups, and optimization according to current needs. In case of problems or new requests, we respond quickly and flexibly to ensure your solution remains stable, secure, and fully functional for the future. We can also help you with expanding functionalities or integrating new technologies, so your project can continuously evolve with your business.",
-    "question_6": "Do you also modify existing applications?",
-    "answer_6": "Yes, we don't always have to start from scratch. We often work on modifications and improvements to existing applications or websites. This can include expanding functionalities, modernizing an outdated appearance, increasing speed and performance, improving security, or adding integrations with other systems. If you have a project that's already working but needs to be taken to the next level, we can take it over, analyze its current state, and propose the best way to improve it.",
-    "header_1": "Frequently Asked Questions",
-    "write_us_prompt": "Didn't we answer everything? Write to us"
-  },
   "common": {
     "button_text_details": "Show details",
     "button_close": "Close",
@@ -37,60 +21,22 @@
     "about-us": "Additional Information",
     "navigation": "Log in"
   },
-  "projects": {
-    "header_1": "Last 5 Completed Projects",
-    "table_header_title": "Project Name",
-    "table_header_duration": "Duration",
-    "table_header_client": "Client",
-    "more_button_prompt": "Want to see more?",
-    "more_button_link_text": "Full list here",
-    "project_1": {
-      "name": "E-shop for healthy products",
-      "duration": "2025",
-      "client": "First Prague Company, s. r. o.",
-      "description": "We designed and developed a complete, modern custom e-shop focused on healthy products. The e-shop features advanced order management, a fast and secure payment gateway, precise stock tracking, and a responsive design that ensures perfect display on all types of devices. The result is an intuitive and seamless shopping experience for customers and efficient management for the owners."
-    },
-    "project_2": {
-      "name": "School website",
-      "duration": "2025",
-      "client": "NAUCSETO, s. r. o.",
-      "description": "We created a clear and modern website for an educational institution, serving as the main communication portal for students, parents, and teachers. The site includes interactive schedules, an events calendar, a news blog, and a secure section for uploading study materials. We simplified communication and made key information accessible in one place."
-    },
-    "project_3": {
-      "name": "Custom ERP System",
-      "duration": "2024/2025",
-      "client": "",
-      "description": "We developed a custom-tailored ERP (Enterprise Resource Planning) system that centralizes and automates key business processes—from financial management to human resources and logistics. The system provides a comprehensive overview of the business operations in real-time, allowing for better decision-making and increasing overall efficiency and transparency."
-    },
-    "project_4": {
-      "name": "Custom CRM system",
-      "duration": "2024",
-      "client": "",
-      "description": "We developed a sophisticated CRM (Customer Relationship Management) system designed to meet the client's specific needs. The system includes comprehensive customer and sales cycle management, communication automation, and detailed analytics. It helps companies build stronger relationships with clients, optimize sales processes, and increase customer loyalty."
-    },
-    "project_5": {
-      "name": "AI automation",
-      "duration": "2024",
-      "client": "",
-      "description": "We implemented an AI solution that automates repetitive and time-consuming tasks. This artificial intelligence is capable of analyzing data, generating responses, and performing operations that previously required human intervention. The result is a significant increase in efficiency, a reduction in errors, and the freeing up of employee capacity for more creative and complex tasks."
-    }
-  },
   "footer": {
-    "company_name": "RegioPartner, s.r.o.",
+    "company_name": "Firma, s.r.o.",
     "address_label": "Address",
-    "address_value": "Kytlická 862/6, 190 00 Prague",
+    "address_value": "Street 123",
     "ico_label": "ID No.",
-    "ico_value": "25133161",
+    "ico_value": "1111111",
     "dic_label": "VAT No.",
-    "dic_value": "CZ25133161",
+    "dic_value": "1111111",
     "quick_links_header": "Quick links",
     "contact_header": "Contact",
     "email_label": "Email",
-    "email_value": "info@rpsw.cz",
+    "email_value": "info@info.cz",
     "phone_label": "Phone",
-    "phone_value": "+420 733 188 328",
+    "phone_value": "+420 123 123 123",
     "legal_info_header": "Legal information",
-    "copyright_text": "©2025 RegioPartner, s.r.o., All rights reserved."
+    "copyright_text": "©2025 Firma, s.r.o., All rights reserved."
   },
   "legal": {
     "privacy_policy": "Privacy Policy",
@@ -120,26 +66,27 @@
     "privacy_policy_link": "Privacy Policy"
   },
   "academy": {
-    "header_1": "Header",
+    "header_1": "Header_academy",
     "text_1": "Text"
   },
   "shop": {
-    "header_1": "Header",
+    "header_1": "Header_shop",
     "text_1": "Text"
   },
   "services": {
-    "header_1": "Header",
+    "header_1": "Header_services",
     "text_1": "Text"
   },
   "home": {
-    "header_1": "Header",
+    "header_1": "Header_home",
     "text_1": "Text"
   },
-  "about-us": {
-    "header": "Additional Information",
-    "paragraph_1": "The company Regiopartner s.r.o. has been active for more than 20 years in the field of evaluations and regional development planning. We focus on evaluating programs and projects financed from public funds and on strategic planning for territorial development. Thanks to this experience, we have built a stable foundation and professional know-how, on which we are gradually building new activities.",
-    "paragraph_2": "In 2023, we therefore founded a new division, RPsoftware, which expands the company's activities towards modern technologies. RPsoftware builds on the previous IT support provided to the core company in the areas of survey research, statistical data processing, and other IT products. The new division focuses on software development and providing digital solutions, especially for small and medium-sized enterprises and also for individuals who need a reliable partner for their IT projects.",
-    "paragraph_3": "Our goal is to deliver software that is not only technically high-quality but also adapted to the specific needs of users. We provide complete services—from analysis and solution design to development, testing, implementation, and long-term support.",
-    "paragraph_4": "RPsoftware operates under the umbrella of Regiopartner s.r.o., which means it stems from the same professional background and values but also represents a specialized division focused exclusively on the IT sector. The connection of both parts of the company allows us to combine experience from evaluations and development planning in the public space with technological capabilities and thus offer services that have a broader context and added value."
+  "tos":{
+    "header_1": "Header_tos",
+    "text_1": "Text"
+  },
+  "privacy_policy":{
+    "header_1": "Header_pp",
+    "text_1": "Text"
   }
 }

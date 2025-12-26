@@ -3,21 +3,12 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
-  background-color: rgba(26, 26, 26, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  height: 70px; /* Statická výška */
+  background-color: #111111; /* Plná, neprůsvitná barva */
+  border-bottom: 1px solid #222;
   z-index: 1000;
-  transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
-}
-
-header.scrolled {
-  height: 65px;
-  background-color: rgba(15, 15, 15, 0.95);
-  box-shadow: 0 5px 25px rgba(0,0,0,0.6);
 }
 
 .header-container {
@@ -30,29 +21,32 @@ header.scrolled {
 }
 
 .logo-wrp img {
-  height: 45px;
-  transition: height 0.3s ease;
+  height: 40px;
+  display: block;
 }
 
+/* Desktop Nav */
 .desktop-nav ul {
   display: flex;
   list-style: none;
-  gap: 25px;
+  gap: 30px;
   margin: 0;
+  padding: 0;
 }
 
 .desktop-nav a {
-  color: #a0a0a0;
+  color: #888;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.95rem;
-  transition: color 0.3s ease;
+  font-size: 0.9rem;
+  transition: color 0.2s;
 }
 
 .desktop-nav a:hover, .desktop-nav a.active {
   color: #a67dff;
 }
 
+/* Actions & Lang */
 .header-actions {
   display: flex;
   align-items: center;
@@ -60,176 +54,118 @@ header.scrolled {
 }
 
 .lang-selector {
-  color: #555;
-  font-weight: 800;
-  font-size: 0.85rem;
+  color: #444;
+  font-weight: 700;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Větší mezera mezi CZ a EN v desktopu */
+.lang-selector .separator {
+  margin: 0 12px;
+  color: #333;
 }
 
 .lang-selector span {
   cursor: pointer;
-  padding: 0 5px;
-  transition: color 0.3s;
+  transition: color 0.2s;
+  padding: 2px 4px;
 }
 
 .lang-selector span.active { color: #a67dff; }
 
+/* Hamburger */
 .hamburger {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   display: none;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
-  z-index: 1100;
+  background: #1a1a1a;
+  border-radius: 6px;
 }
 
-.inner-box {
-  width: 24px;
-  height: 18px;
-  position: relative;
-}
-
-.bar {
-  position: absolute;
-  width: 24px;
-  height: 2px;
-  background-color: #fff;
-  left: 0;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
+.inner-box { width: 20px; height: 14px; position: relative; }
+.bar { position: absolute; width: 20px; height: 2px; background: #fff; left: 0; transition: 0.3s; }
 .bar.top { top: 0; }
-.bar.mid { top: 8px; }
-.bar.bot { top: 16px; }
+.bar.mid { top: 6px; }
+.bar.bot { top: 12px; }
 
-.hamburger.open .bar.top { top: 8px; transform: rotate(45deg); }
-.hamburger.open .bar.mid { opacity: 0; transform: translateX(-10px); }
-.hamburger.open .bar.bot { top: 8px; transform: rotate(-45deg); }
+.hamburger.open .bar.top { transform: translateY(6px) rotate(45deg); }
+.hamburger.open .bar.mid { opacity: 0; }
+.hamburger.open .bar.bot { transform: translateY(-6px) rotate(-45deg); }
 
-/* Mobile Popup Core Styles */
+/* Mobile Menu */
 .mobile-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.7);
+  inset: 0;
+  background: rgba(0,0,0,0.8);
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
   z-index: 1001;
 }
-
 .mobile-overlay.open { opacity: 1; visibility: visible; }
 
 .mobile-popup {
   position: fixed;
   top: 0;
-  right: -320px;
-  width: 300px;
+  right: -100%;
+  width: 280px;
   height: 100%;
-  background: #111;
+  background: #000;
   z-index: 1002;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 100px 40px;
-  box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+  transition: right 0.3s ease;
+  padding: 80px 30px;
 }
+.mobile-popup.open { right: 0; }
 
-.mobile-popup.open { transform: translateX(-320px); }
+.mobile-nav { display: flex; flex-direction: column; gap: 20px; }
+.mobile-nav a { color: #fff; text-decoration: none; font-size: 1.2rem; font-weight: 600; }
 
-.mobile-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.mobile-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
-.mobile-nav a.active { color: #a67dff; }
-
-/* Menší mobilní přepínač jazyků */
-.mobile-lang-container {
-  margin-top: 30px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255,255,255,0.05);
-}
-
-.lang-title {
-  display: block;
-  color: #555;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  letter-spacing: 0.5px;
-}
+.mobile-lang-container { margin-top: 30px; border-top: 1px solid #222; padding-top: 20px; }
+.lang-title { color: #444; font-size: 0.7rem; text-transform: uppercase; display: block; margin-bottom: 10px; }
 
 .lang-toggle-wrapper {
   position: relative;
   display: flex;
-  background: #1a1a1a;
-  border-radius: 8px;
+  background: #111;
+  border-radius: 6px;
   padding: 3px;
-  border: 1px solid rgba(255,255,255,0.03);
-  width: 130px; /* Kompaktní šířka */
+  width: 150px; /* Zvětšeno pro větší rozestup */
+  border: 1px solid #222;
 }
 
-.lang-option {
-  flex: 1;
-  position: relative;
-  z-index: 2;
-  padding: 6px 0;
-  color: #666;
+.lang-option { 
+  flex: 1; 
+  z-index: 2; 
+  padding: 8px 0; 
+  color: #555; 
+  font-size: 0.85rem; 
+  text-align: center; 
+  cursor: pointer; 
   font-weight: 700;
-  font-size: 0.8rem;
-  text-align: center;
-  cursor: pointer;
+  letter-spacing: 1px;
 }
 
 .lang-option.active { color: #fff; }
 
 .lang-bg-slider {
   position: absolute;
-  top: 3px;
+  top: 3px; 
   left: 3px;
   height: calc(100% - 6px);
   width: calc(50% - 3px);
   background: #8e44ad;
-  border-radius: 6px;
+  border-radius: 4px;
   z-index: 1;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.2s ease-in-out;
 }
-
 .lang-bg-slider.en-active { transform: translateX(100%); }
 
-/* --- RESPONSIVE ADJUSTMENTS --- */
-@media (max-width: 1150px) {
-  .desktop-nav { 
-    display: none; 
-  }
-  .lang-selector { 
-    display: none; /* Odstraní jazyky z headeru na mobilu/tabletu */
-  }
-  .hamburger { 
-    display: flex; 
-  }
-  .header-actions {
-    gap: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .mobile-popup {
-    width: 100%; /* Na velmi malých mobilech přes celou šířku */
-    right: -100%;
-  }
-  .mobile-popup.open {
-    transform: translateX(-100%);
-  }
+@media (max-width: 1000px) {
+  .desktop-nav, .lang-selector { display: none; }
+  .hamburger { display: flex; }
 }

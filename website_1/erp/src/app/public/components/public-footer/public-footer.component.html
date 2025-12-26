@@ -1,52 +1,50 @@
 <footer class="public-footer">
-  <div class="footer-content">
-    <div class="footer-section company-info">
-      <h3>{{ company_name_text }}</h3>
-      <p><strong>{{ address_label_text }}:</strong> {{ address_value_text }}</p>
-      <p><strong>{{ ico_label_text }}:</strong> {{ ico_value_text }}</p>
-      <p><strong>{{ dic_label_text }}:</strong> {{ dic_value_text }}</p>
-      <div class="social-links">
-        <a target="_blank" href="https://www.instagram.com/rpsw.cz">
-          <img [src]="ig_link" alt="Instagram">
-        </a>
-        <a target="_blank" href="https://www.facebook.com/profile.php?id=61579702352722">
-          <img [src]="fb_link" alt="Facebook">
-        </a>
-        <a target="_blank" href="https://www.tiktok.com/@rpsw.cz">
-          <img [src]="tt_link" alt="Tiktok">
-        </a>
-        <!-- <a target="_blank" href="https://x.com/rpswprague">
-          <img [src]="x_link" alt="X">
-        </a> -->
+  <div class="footer-container">
+    <div class="footer-grid">
+      
+      <div class="footer-col">
+        <h4 class="footer-title">{{ company_name_text }}</h4>
+        <div class="footer-info">
+          <p>{{ address_label_text }}: {{ address_value_text }}</p>
+          <p>{{ ico_label_text }}: {{ ico_value_text }} | {{ dic_label_text }}: {{ dic_value_text }}</p>
+        </div>
+        <div class="footer-socials">
+          <a target="_blank" href="https://www.instagram.com/"><img [src]="ig_link" alt="IG"></a>
+          <a target="_blank" href="https://www.facebook.com"><img [src]="fb_link" alt="FB"></a>
+          <a target="_blank" href="https://www.tiktok.com"><img [src]="tt_link" alt="TT"></a>
+        </div>
       </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">{{ quick_links_header_text }}</h4>
+        <ul class="footer-links">
+          <li *ngFor="let link of footerNavLinks">
+            <a [routerLink]="link.route">{{ link.text }}</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">{{ legal_info_header_text }}</h4>
+        <ul class="footer-links">
+          <li *ngFor="let link of footerLegalLinks">
+            <a [routerLink]="link.route">{{ link.text }}</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">{{ contact_header_text }}</h4>
+        <div class="footer-info">
+          <p><a href="mailto:info@info.cz" class="email-link">{{ email_value_text }}</a></p>
+          <p>{{ phone_value_text }}</p>
+        </div>
+      </div>
+
     </div>
 
-    <div class="footer-section quick-links">
-      <h3>{{ quick_links_header_text }}</h3>
-      <ul>
-        <li *ngFor="let link of footerNavLinks">
-          <a [routerLink]="link.route">{{ link.text }}</a>
-        </li>
-      </ul>
+    <div class="footer-bottom">
+      <p>{{ copyright_text }}</p>
     </div>
-
-    <div class="footer-section contact-info">
-      <h3>{{ contact_header_text }}</h3>
-      <p><strong>{{ email_label_text }}: </strong><a href="mailto:info@rpsw.cz">{{ email_value_text }}</a></p>
-      <p><strong>{{ phone_label_text }}:</strong> {{ phone_value_text }} </p>
-    </div>
-
-    <div class="footer-section legal-info">
-      <h3>{{ legal_info_header_text }}</h3>
-      <ul>
-        <li *ngFor="let link of footerLegalLinks">
-          <a [routerLink]="link.route">{{ link.text }}</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  
-  <div class="footer-bottom">
-    <p>{{ copyright_text }}</p>
   </div>
 </footer>

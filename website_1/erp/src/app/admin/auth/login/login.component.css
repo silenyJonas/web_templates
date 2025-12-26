@@ -1,103 +1,244 @@
+/* Kontejner stránky */
 .login-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - 150px); /* Odečteme výšku headeru a footeru */
+  min-height: calc(100vh - 150px);
   padding: 20px;
-  background-color: #f0f2f5;
-  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  color: #333333;
 }
 
-h2 {
-  color: #333;
-  margin-bottom: 30px;
-  font-size: 2.2em;
+/* Nadpis sjednocený s tvým template */
+.login-container h2 {
+  color: #000000;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
   text-align: center;
 }
 
-form {
+/* Box formuláře */
+.login-container form {
   background-color: #ffffff;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
   width: 100%;
   max-width: 400px;
   box-sizing: border-box;
 }
 
-.form-group {
-  margin-bottom: 25px;
+/* Skupiny polí */
+.login-container .form-group {
+  margin-bottom: 15px;
 }
 
-label {
+/* Label - přesně podle tvého vzoru */
+.login-container label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
+  font-size: 0.9em;
   font-weight: bold;
-  color: #555;
+  color: #333333;
 }
 
-input[type="text"],
-input[type="password"] {
+/* OBĚ POLE JSOU TEĎ IDENTICKÁ - sjednoceno s tvým Generic Formem */
+#password, #email {
   width: 100%;
-  padding: 12px 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1em;
-  box-sizing: border-box; /* Zahrne padding do šířky */
-  transition: border-color 0.3s ease;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 0.95em;
+  box-sizing: border-box;
+  display: block; /* Zajišťuje stejné chování v mřížce */
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus {
-  border-color: #007bff;
+/* Focus stav pro oba inputy */
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  border-color: #000000;
 }
 
-button[type="submit"] {
+/* Hlavní tlačítko - Černé */
+.login-container button[type="submit"] {
   width: 100%;
-  padding: 12px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.1em;
+  padding: 12px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  font-size: 0.9em;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase;
 }
 
-button[type="submit"]:hover {
-  background-color: #0056b3;
-  transform: translateY(-2px);
+.login-container button[type="submit"]:hover {
+  background-color: #333333;
 }
 
-.error-message {
-  color: #e74c3c;
+/* Tlačítko Zpět domů - Bílé s černým okrajem (identické s tvým button[type="button"]) */
+.login-container .back-to-home {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-container .home-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  font-size: 0.9em;
+  font-weight: bold;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+.login-container .home-button:hover {
+  background-color: #f0f0f0;/* Kontejner stránky pro přihlášení */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 150px);
+  padding: 20px;
+  background-color: #ffffff; /* Sjednoceno na bílou */
+  font-family: sans-serif;
+  color: #333333;
+}
+
+/* Nadpis sjednocený s .form-header h2 */
+.login-container h2 {
+  color: #000000;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Form box sjednocený s .generic-form-container */
+.login-container form {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Skupiny polí */
+.login-container .form-group {
+  margin-bottom: 15px;
+}
+
+/* Labely sjednocené s tvým vzorem */
+.login-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #333333;
+}
+
+/* Inputy sjednocené na černobílý standard */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 0.95em;
+  box-sizing: border-box;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+/* Hlavní tlačítko submit - černé, bílý text */
+.login-container button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+}
+
+.login-container button[type="submit"]:hover {
+  background-color: #333333;
+}
+
+/* Chybová hláška sjednocená s .error-message */
+.login-container .error-message {
+  padding: 10px;
+  background-color: #fff0f0;
+  border: 1px solid #ffcccc;
+  color: #d00000;
   margin-top: 15px;
   text-align: center;
-  font-size: 0.95em;
-  font-weight: bold;
+  font-size: 0.85em;
 }
-.back-to-home {
-  margin-top: 25px;
+
+/* Odkaz/tlačítko zpět domů - sjednoceno s button[type="button"] */
+.login-container .back-to-home {
+  margin-top: 20px;
   text-align: center;
+  width: 100%;
+  max-width: 400px;
 }
 
-.home-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #6c757d; /* Šedá barva */
-  color: white;
+.login-container .home-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #ffffff;
+  color: #000000;
   text-decoration: none;
-  border-radius: 5px;
-  font-size: 1em;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #000000;
+  border-radius: 2px;
+  font-size: 0.9em;
+  font-weight: bold;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
 }
 
-.home-button:hover {
-  background-color: #5a6268;
-  transform: translateY(-2px);
+.login-container .home-button:hover {
+  background-color: #f0f0f0;
+}
+}
+
+/* Error message styl */
+.login-container .error-message {
+  padding: 10px;
+  background-color: #fff0f0;
+  border: 1px solid #ffcccc;
+  color: #d00000;
+  margin-top: 15px;
+  font-size: 0.85em;
+  text-align: center;
 }

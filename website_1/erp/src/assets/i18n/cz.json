@@ -1,32 +1,4 @@
 {
-  "faq": {
-"question_1": "Jaké typy softwaru dokážete vyvinout?",
-"answer_1": "Naším zaměřením je kompletní vývoj softwaru od návrhu až po nasazení. Realizujeme webové stránky a aplikace, e-shopy, mobilní aplikace pro iOS a Android, ale také desktopové programy pro firemní i individuální použití. Součástí našich služeb jsou i pokročilá řešení založená na umělé inteligenci a automatizaci procesů. Kromě toho se specializujeme na integrace různých systémů (např. platební brány, ERP, CRM nebo cloudové služby) a také na úpravy a vylepšení již existujících projektů. Vždy hledáme cestu, jak vytvořit nebo optimalizovat řešení na míru, které vám skutečně pomůže v podnikání.",
-
-  
-"question_2": "Jak dlouho trvá vytvoření projektu?",
-"answer_2": "Doba vývoje se vždy odvíjí od rozsahu a složitosti projektu. Jednodušší řešení, jako je prezentační web nebo menší firemní stránky, mohou být hotové už během několika dnů až dvou týdnů. Náročnější projekty, například e-shopy, portály nebo komplexní webové a mobilní aplikace, mohou trvat několik týdnů až měsíců v závislosti na počtu funkcí, designových požadavcích či integracích s dalšími systémy. Po úvodní konzultaci vám připravíme realistický časový plán s milníky, abyste přesně věděli, jak bude vývoj postupovat a kdy můžete očekávat spuštění."
-,
-
-  
-"question_3": "Kolik stojí vývoj webu nebo aplikace?",
-"answer_3": "Cena se vždy odvíjí od rozsahu a složitosti projektu. Jinou cenu bude mít jednoduchý prezentační web, jinou plnohodnotný e-shop nebo komplexní aplikace s integracemi a pokročilými funkcemi. Do výsledné částky vstupuje také volba technologií, náročnost designu, požadavky na zabezpečení nebo napojení na další systémy. Každý projekt proto posuzujeme individuálně a po úvodní konzultaci vám připravíme přesnou cenovou nabídku spolu s časovým rámcem. Samozřejmostí je transparentnost – vždy víte, za co platíte, a nabízíme i různé varianty řešení podle vašeho rozpočtu a priorit. Díky tomu si můžete vybrat cestu, která nejlépe odpovídá vašim potřebám i finančním možnostem.",
-
-  
-"question_4": "Jak obvykle probíhá spolupráce?",
-"answer_4": "Spolupráci začínáme úvodní konzultací, kde si vyslechneme vaše potřeby, cíle a poznámky. Na základě těchto informací připravíme návrh řešení – ten zahrnuje volbu vhodných technologií, technické specifikace, návrh vzhledu a funkcionalit, časový rámec dokončení i cenovou nabídku. Tento postup vám předložíme ke schválení. Jakmile je vše odsouhlaseno, přecházíme k samotnému vývoji, testování a následnému spuštění projektu. Po celou dobu vás průběžně informujeme o pokroku, zapojujeme vás do klíčových rozhodnutí a zajišťujeme, abyste měli plnou kontrolu nad výsledkem.",
-
-  
-"question_5": "Poskytujete i dlouhodobou podporu a údržbu?",
-"answer_5": "Ano, poskytujeme dlouhodobou podporu a údržbu, protože víme, že spuštěním projektu práce nekončí. Součástí našich služeb je pravidelná aktualizace systémů a knihoven, sledování výkonu a bezpečnosti, monitoring provozu, zálohování dat a také optimalizace podle aktuálních potřeb. V případě problémů nebo nových požadavků reagujeme rychle a pružně, abyste měli jistotu, že vaše řešení zůstane stabilní, bezpečné a plně funkční i do budoucna. Navíc vám můžeme pomoci s rozšiřováním funkcionalit nebo integrací nových technologií, takže se váš projekt může neustále vyvíjet spolu s vaším podnikáním.",
-
-"question_6": "Upravujete i hotové aplikace?",
-"answer_6": "Ano, nemusíme vždy začínat úplně od začátku. Často pracujeme i na úpravách a vylepšeních existujících aplikací nebo webů. Může jít o rozšíření funkcionalit, modernizaci zastaralého vzhledu, zvýšení rychlosti a výkonu, zlepšení zabezpečení nebo třeba přidání integrací s dalšími systémy. Pokud máte projekt, který už funguje, ale potřebuje posunout na vyšší úroveň, dokážeme ho převzít, zanalyzovat jeho stav a navrhnout nejlepší cestu k jeho zlepšení.",
-
-
-    "header_1": "Často kladené otázky",
-    "write_us_prompt": "Nezodpověděli jsme vše? Napište nám"
-  },
   "common": {
     "button_text_details": "Zobrazit detaily",
     "button_close": "Zavřít",
@@ -49,53 +21,14 @@
     "about-us": "Dopňující informace",
     "login": "Přihlásit se"
   },
-  
-  "projects": {
-    "header_1": "Posledních 5 dokončených projektů",
-    "table_header_title": "Název projektu",
-    "table_header_duration": "Doba plnění",
-    "table_header_client": "Zadavatel",
-    "more_button_prompt": "Chcete vidět více?",
-    "more_button_link_text": "Celý seznam zde",
-    "project_1": {
-      "name": "E-shop se zdravými produkty",
-      "duration": "2025",
-      "client": "First Prague Company, s. r. o.",
-      "description": "Navrhli jsme a vyvinuli kompletní, moderní e-shop na míru, který se zaměřuje na zdravé produkty. E-shop disponuje pokročilými funkcemi pro správu objednávek, rychlou a zabezpečenou platební bránou, přesným sledováním skladových zásob a responzivním designem, který zajišťuje perfektní zobrazení na všech typech zařízení. Výsledkem je intuitivní a bezproblémové nakupování pro zákazníky a efektivní správa pro majitele."
-    },
-    "project_2": {
-      "name": "Školní webové stránky",
-      "duration": "2025",
-      "client": "NAUCSETO, s. r. o.",
-      "description": "Vytvořili jsme přehledné a moderní webové stránky pro vzdělávací instituci, které slouží jako hlavní komunikační portál pro studenty, rodiče a učitele. Web obsahuje interaktivní rozvrhy, kalendář akcí, blog s novinkami a zabezpečenou sekci pro vkládání studijních materiálů. Zjednodušili jsme komunikaci a zpřístupnili klíčové informace na jednom místě."
-    },
-    "project_3": {
-      "name": "ERP Systém na míru",
-      "duration": "2024/2025",
-      "client": "",
-      "description": "Vyvinuli jsme ERP (Enterprise Resource Planning) systém šitý na míru, který centralizuje a automatizuje klíčové firemní procesy – od správy financí, přes řízení lidských zdrojů až po logistiku. Systém poskytuje komplexní přehled o chodu podniku v reálném čase, což umožňuje lepší rozhodování a zvyšuje celkovou efektivitu a transparentnost."
-    },
-    "project_4": {
-      "name": "CRM systém na míru",
-      "duration": "2024",
-      "client": "",
-      "description": "Vyvinuli jsme sofistikovaný CRM (Customer Relationship Management) systém, který je navržen na míru specifickým potřebám klienta. Systém zahrnuje komplexní správu zákazníků a prodejních cyklů, automatizaci komunikace a detailní analytiku. Pomáhá firmám budovat silnější vztahy s klienty, optimalizovat prodejní procesy a zvyšovat loajalitu zákazníků."
-    },
-    "project_5": {
-      "name": "AI automatizace",
-      "duration": "2024",
-      "client": "",
-      "description": "Implementovali jsme AI řešení, které automatizuje opakující se a časově náročné úkoly. Tato umělá inteligence je schopna analyzovat data, generovat odpovědi a provádět operace, které dříve vyžadovaly lidský zásah. Výsledkem je výrazné zvýšení efektivity, snížení chybovosti a uvolnění kapacity zaměstnanců pro kreativnější a složitější úkoly."
-    }
-  },
   "footer": {
-    "company_name": "RegioPartner, s.r.o.",
+    "company_name": "RPSW",
     "address_label": "Adresa",
-    "address_value": "Kytlická 862/6, 190 00 Praha",
+    "address_value": "Ulice 123",
     "ico_label": "IČO",
-    "ico_value": "25133161",
+    "ico_value": "11111111",
     "dic_label": "DIČ",
-    "dic_value": "CZ25133161",
+    "dic_value": "11111111",
     "quick_links_header": "Rychlé odkazy",
     "contact_header": "Kontakt",
     "email_label": "Email",
@@ -103,13 +36,13 @@
     "phone_label": "Telefon",
     "phone_value": "+420 733 188 328",
     "legal_info_header": "Právní informace",
-    "copyright_text": "©2025 RegioPartner, s.r.o., Všechna práva vyhrazena."
-  },
-  "legal": {
-    "privacy_policy": "Zásady ochrany osobních údajů",
-    "terms_of_service": "Obchodní podmínky"
+    "copyright_text": "©2025 RPSW, Všechna práva vyhrazena.",
+    "privacy_policy":"Zásady ochrany osobních údajů",
+    "terms_of_service":"Obchodní podmínky"
   },
   "form": {
+    "consent": "Souhlasím se zpracováním osobních údajů",
+    "privacy_policy_link": "Zásady ochrany osobních údajů",
     "success_title": "Děkujeme!",
     "success_message": "Formulář byl úspěšně odeslán! Brzy se vám ozveme.",
     "reset_button_text": "Vyplnit znovu",
@@ -117,6 +50,7 @@
     "error_submit_generic": "Při odesílání formuláře nastala chyba. Zkuste to prosím znovu.",
     "error_validation_generic": "Prosím vyplňte všechna povinná pole a opravte chyby.",
     "select_default_option": "Vyberte...",
+    "closed_title": "Formulář je dočasně uzavřen",
     "validation_required": "Toto pole je povinné.",
     "validation_email": "Zadejte platnou e-mailovou adresu.",
     "validation_pattern": "Neplatný formát.",
@@ -129,37 +63,30 @@
     "validation_max_prefix": "Maximální hodnota je",
     "validation_max_suffix": ".",
     "validation_invalid_value": "Neplatná hodnota.",
-    "consent": "Souhlasím se zpracováním osobních údajů",
-    "privacy_policy_link": "Zásady ochrany osobních údajů"
+    "form_1": {
+      "header": "Rezervujte si bezplatnou konzultaci",
+      "description": "Zanechte nám kontakt a my se vám ozveme zpět.",
+      "button_text": "Rezervovat konzultaci",
+      "topic_label": "Téma",
+      "topic_1": "Webový vývoj",
+      "topic_2": "Desktopový vývoj",
+      "topic_3": "AI vývoj",
+      "topic_other": "Jiné",
+      "email_label": "E-mail",
+      "email_placeholder": "vas.email@priklad.cz",
+      "phone_label": "Telefon (nepovinné)",
+      "phone_placeholder": "např. +420 123 456 789",
+      "description_label": "Stručný popis zadání",
+      "description_placeholder": "Popište prosím váš projekt nebo dotaz..."
+    }
   },
   "academy": {
-    "header_1": "Nadpis",
-    "text_1": "Popis"
+    "header_1": "Akademie",
+    "text_1": "Akademie."
   },
-  "shop": {
-    "header_1": "Nadpis",
-    "text_1": "Popis"
-  },
-  
-  "services": {
-    "header_1": "Nadpis",
-    "text_1": "Popis"
-  },
-  "home": {
-    "header_1": "Nadpis",
-    "text_1": "Popis"
-  },
-  "about-us": {
-
-    "header": "Dopňující informace",
-
-    "paragraph_1": "Společnost Regiopartner s.r.o. působí více jak 20 let v oblasti evaluací a plánování regionálního rozvoje. Zaměřujeme se na hodnocení programů a projektů financovaných z veřejných zdrojů a strategické plánování rozvoje území. Díky těmto zkušenostem jsme si vybudovali stabilní zázemí a odborné know-how, na kterém postupně stavíme i nové aktivity.",
-
-    "paragraph_2": "V roce 2023 jsme proto založili novou divizi RPsoftware, která rozšiřuje činnost společnosti směrem k moderním technologiím. RPsoftware navazuje na předchozí IT podporu poskytovanou kmenové firmě v oblasti dotazníkových šetření, statistického zpracování dat a dalších IT produktů. Nově se zaměřuje na vývoj softwaru a poskytování digitálních řešení zejména pro menší a střední podniky a také pro jednotlivce, kteří potřebují spolehlivého partnera pro své IT projekty.",
-
-    "paragraph_3": "Naším cílem je přinášet software, který je nejen technicky kvalitní, ale také přizpůsobený konkrétním potřebám uživatelů. Zajišťujeme kompletní služby – od analýzy a návrhy řešení přes samotný vývoj až po testování, implementaci a dlouhodobou podporu.",
-
-    "paragraph_4": "RPsoftware funguje pod hlavičkou Regiopartner s.r.o., což znamená, že vychází ze stejného profesionálního zázemí a hodnot, ale zároveň představuje specializovanou divizi soustředěnou výhradně na IT oblast. Spojení obou částí společnosti nám umožňuje kombinovat zkušenosti z evaluací a plánování rozvoje ve veřejném prostoru s technologickými možnostmi a nabízet tak služby, které mají širší kontext a přidanou hodnotu."
-
-  }
+  "shop": { "header_1": "Obchod", "text_1": "Obchod." },
+  "services": { "header_1": "Naše služby", "text_1": "Naše služby." },
+  "home": { "header_1": "Home", "text_1": "Home." },
+  "tos": { "header_1": "Obchodní podmínky", "text_1": "Obchodní podmínky." },
+  "privacy_policy": { "header_1": "Zásady soukromí", "text_1": "Zásady soukromí." }
 }
