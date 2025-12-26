@@ -55,63 +55,7 @@ body {
     padding: 0;
     width: 100vw;
     overflow-x: hidden; /* Jen pro horizontální scroll */
-    /* overflow-y: auto; - Nechte toto na výchozí hodnotě, nebo ji nastavte na auto, ale ne !important,
-                          aby ji body.no-scroll mohl přepsat */
-    background-color: #11111f;
-    cursor: crosshair;
-
-    /* Stylování scrollbaru pro Webkit prohlížeče na úrovni BODY */
-    /* Zvažte, zda chcete mít scrollbar na html NEBO na body, ne na obou, 
-       protože se mohou lišit. Pokud chcete, aby se scrollbar pohyboval s celou stránkou, nechte to na html.
-       Pokud ho chcete mít vždy viditelný a jen obsah body skrolovat, nechte to zde.
-       Nechávám to zde, jak jste to měl, ale je to redundantní s html scrollem.
-       Pro jednoduchost bych stylizoval jen html scrollbar a na body nechal výchozí (nebo auto)
-       pokud nebudete mít specifické use-cases.
-       Pokud ale chcete stylovat jen body scrollbar, pak pravidla z html výše odstraňte.*/
-    &::-webkit-scrollbar {
-        width: 4px;
-        height: 4px;
-    }
-    &::-webkit-scrollbar-track {
-        background: rgba(17, 17, 31, 0.2);
-    }
-    &::-webkit-scrollbar-thumb {
-        background: linear-gradient(135deg, rgba(138, 43, 226, 0.4), rgba(0, 191, 255, 0.4));
-        border-radius: 10px;
-        border: 1px solid rgba(17, 17, 31, 0.2);
-    }
-    &::-webkit-scrollbar-thumb:hover {
-        background: linear-gradient(135deg, rgba(153, 50, 204, 0.6), rgba(30, 144, 255, 0.6));
-    }
-    &::-webkit-scrollbar-button {
-        display: none;
-    }
 }
-
-/* --- NOVÉ/UPRAVENÉ PRAVIDLO PRO ZAKÁZÁNÍ SCROLLOVÁNÍ --- */
-/* Ponechejte POUZE tuto definici body.no-scroll */
-body.no-scroll {
-    overflow: hidden; /* Stačí bez !important, pokud není jiná !important kolize */
-    padding-right: var(--scrollbar-width, 0px); 
-}
-
-/* ODSTRAŇTE TOTO PRAVIDLO, PŘEBÍJÍ VŠE! */
-/* html, body {
-    overflow: auto !important; 
-} */
-
-/* Ostatní pravidla pro Firefox scrollbar, kurzory, fonty, atd. zůstávají */
-/* Styly pro Firefox na úrovni HTML */
-/* html {
-    scrollbar-width: thin;
-    scrollbar-color: linear-gradient(135deg, rgba(138, 43, 226, 0.4), rgba(0, 191, 255, 0.4)) rgba(17, 17, 31, 0.2);
-} */
-
-/* Styly pro Firefox na úrovni BODY */
-/* body {
-    scrollbar-width: thin;
-    scrollbar-color: linear-gradient(135deg, rgba(138, 43, 226, 0.4), rgba(0, 191, 255, 0.4)) rgba(17, 17, 31, 0.2);
-} */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
@@ -125,30 +69,7 @@ button, .nav-link {
     font-weight: 500;
 }
 
-@font-face {
-    font-family: 'DhuwurLoroRegular';
-    src: url('assets/fonts/DhuwurLoroRegular-KGno.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'DhuwurRegular';
-    src: url('assets/fonts/DhuwurRegular-nZ4Y.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'HighSansSerif7';
-    src: url('assets/fonts/HighSansSerif7-xZeR.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'ValderoRegular';
-    src: url('assets/fonts/ValderoRegular-Vd06.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 /* Standardní třídy pro kurzory - v pořádku */
 a { cursor: pointer; }

@@ -31,18 +31,6 @@ export const routes: Routes = [
         path: 'privacy-policy',
         loadComponent: () => import('./public/pages/privacy-policy/privacy-policy.component').then(m => m.PrivacyPolicyComponent)
       },
-      {
-        path: 'references',
-        loadComponent: () => import('./public/pages/references/references.component').then(m => m.ReferencesComponent)
-      },
-      {
-        path: 'faq',
-        loadComponent: () => import('./public/pages/faq/faq.component').then(m => m.FaqComponent)
-      },
-      {
-        path: 'about-us',
-        loadComponent: () => import('./public/pages/about-us/about-us.component').then(m => m.AboutUsComponent)
-      },
     ]
   },
   {
