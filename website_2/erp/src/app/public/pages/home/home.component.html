@@ -1,0 +1,19 @@
+<h1>
+    {{header_1}}
+</h1>
+<section>
+    {{text_1}}
+</section>
+
+
+                  <app-generic-form
+                        [formConfig]="contactFormConfig"
+                        [form_header]="form_header"
+                        [form_description]="form_description"
+                        [form_button]="form_button"
+                        (formSubmitted)="handleFormSubmission($event)"
+                        (formReset)="handleFormReset()"
+
+                    ></app-generic-form>
+
+ 

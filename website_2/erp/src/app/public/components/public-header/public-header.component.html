@@ -1,0 +1,51 @@
+<header>
+  <div class="header-container">
+    <a routerLink="/home" class="logo-wrp" (click)="closeMenu()">
+      <img [src]="logo" alt="Logo">
+    </a>
+
+    <nav class="desktop-nav">
+      <ul>
+        <li><a routerLink="/home" routerLinkActive="active">{{ navHome }}</a></li>
+        <li><a routerLink="/services" routerLinkActive="active">{{ navServices }}</a></li>
+        <li><a routerLink="/shop" routerLinkActive="active">{{ navShop }}</a></li>
+        <li><a routerLink="/academy" routerLinkActive="active">{{ navAcademy }}</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-selector">
+        <span (click)="selectLanguage('cz')" [class.active]="(currentLanguage$ | async) === 'cz'">{{ langCz }}</span>
+        <span class="separator">|</span>
+        <span (click)="selectLanguage('en')" [class.active]="(currentLanguage$ | async) === 'en'">{{ langEn }}</span>
+      </div>
+      
+      <div class="hamburger" (click)="toggleMenu()" [class.open]="isMenuOpen">
+        <div class="inner-box">
+          <span class="bar top"></span>
+          <span class="bar mid"></span>
+          <span class="bar bot"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-overlay" [class.open]="isMenuOpen" (click)="closeMenu()"></div>
+<div class="mobile-popup" [class.open]="isMenuOpen">
+  <nav class="mobile-nav">
+    <a routerLink="/home" (click)="closeMenu()">{{ navHome }}</a>
+    <a routerLink="/services" (click)="closeMenu()">{{ navServices }}</a>
+    <a routerLink="/shop" (click)="closeMenu()">{{ navShop }}</a>
+    <a routerLink="/academy" (click)="closeMenu()">{{ navAcademy }}</a>
+    
+    <div class="mobile-lang-container">
+      <span class="lang-title">{{ langLabel }}</span>
+      <div class="lang-toggle-wrapper">
+        <div class="lang-option" [class.active]="(currentLanguage$ | async) === 'cz'" (click)="selectLanguage('cz')">{{ langCz }}</div>
+        <div class="lang-option" [class.active]="(currentLanguage$ | async) === 'en'" (click)="selectLanguage('en')">{{ langEn }}</div>
+        <div class="lang-bg-slider" [class.en-active]="(currentLanguage$ | async) === 'en'"></div>
+      </div>
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,156 @@
+/* Základní kontejner - čistý, bez stínů a barev */
+.generic-form-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff; /* Čistě bílé pozadí */
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    font-family: sans-serif;
+    color: #333333;
+}
+
+/* Hlavička - jednoduchý text */
+.form-header {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 10px;
+}
+
+.form-header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+.form-header h4 {
+    margin: 5px 0 0 0;
+    font-size: 0.9em;
+    color: #666666;
+    font-weight: normal;
+}
+
+/* Skupiny polí a labely */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* Inputy - standardní vzhled */
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 0.95em;
+    box-sizing: border-box;
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: #000000; /* Černý focus pro jednoduchost */
+}
+
+/* Tlačítka - černobílý vzhled */
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form-buttons button {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.form-buttons button[type="submit"] {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.form-buttons button[type="submit"]:hover {
+    background-color: #333333;
+}
+
+.form-buttons button[type="submit"]:disabled {
+    background-color: #cccccc;
+    border-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.form-buttons button[type="button"] {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.form-buttons button[type="button"]:hover {
+    background-color: #f0f0f0;
+}
+
+/* Souhlas a checkbox */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.checkbox-group input {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+
+.checkbox-group label {
+    font-size: 0.8em;
+    font-weight: normal;
+    color: #666666;
+}
+
+/* Chybové hlášky */
+.validation-error {
+    color: #d00000;
+    font-size: 0.75em;
+    margin-top: 3px;
+}
+
+.error-message {
+    padding: 10px;
+    background-color: #fff0f0;
+    border: 1px solid #ffcccc;
+    color: #d00000;
+    margin-bottom: 15px;
+    font-size: 0.85em;
+}
+
+/* Zpráva o úspěchu */
+.success-message-in-form {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #000000;
+}
+
+@media (max-width: 480px) {
+    .form-buttons {
+        flex-direction: column;
+    }
+}

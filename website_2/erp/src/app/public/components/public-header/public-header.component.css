@@ -1,0 +1,171 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px; /* Statická výška */
+  background-color: #111111; /* Plná, neprůsvitná barva */
+  border-bottom: 1px solid #222;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrp img {
+  height: 40px;
+  display: block;
+}
+
+/* Desktop Nav */
+.desktop-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.desktop-nav a {
+  color: #888;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.desktop-nav a:hover, .desktop-nav a.active {
+  color: #a67dff;
+}
+
+/* Actions & Lang */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.lang-selector {
+  color: #444;
+  font-weight: 700;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Větší mezera mezi CZ a EN v desktopu */
+.lang-selector .separator {
+  margin: 0 12px;
+  color: #333;
+}
+
+.lang-selector span {
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 2px 4px;
+}
+
+.lang-selector span.active { color: #a67dff; }
+
+/* Hamburger */
+.hamburger {
+  width: 40px;
+  height: 40px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: #1a1a1a;
+  border-radius: 6px;
+}
+
+.inner-box { width: 20px; height: 14px; position: relative; }
+.bar { position: absolute; width: 20px; height: 2px; background: #fff; left: 0; transition: 0.3s; }
+.bar.top { top: 0; }
+.bar.mid { top: 6px; }
+.bar.bot { top: 12px; }
+
+.hamburger.open .bar.top { transform: translateY(6px) rotate(45deg); }
+.hamburger.open .bar.mid { opacity: 0; }
+.hamburger.open .bar.bot { transform: translateY(-6px) rotate(-45deg); }
+
+/* Mobile Menu */
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 1001;
+}
+.mobile-overlay.open { opacity: 1; visibility: visible; }
+
+.mobile-popup {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 280px;
+  height: 100%;
+  background: #000;
+  z-index: 1002;
+  transition: right 0.3s ease;
+  padding: 80px 30px;
+}
+.mobile-popup.open { right: 0; }
+
+.mobile-nav { display: flex; flex-direction: column; gap: 20px; }
+.mobile-nav a { color: #fff; text-decoration: none; font-size: 1.2rem; font-weight: 600; }
+
+.mobile-lang-container { margin-top: 30px; border-top: 1px solid #222; padding-top: 20px; }
+.lang-title { color: #444; font-size: 0.7rem; text-transform: uppercase; display: block; margin-bottom: 10px; }
+
+.lang-toggle-wrapper {
+  position: relative;
+  display: flex;
+  background: #111;
+  border-radius: 6px;
+  padding: 3px;
+  width: 150px; /* Zvětšeno pro větší rozestup */
+  border: 1px solid #222;
+}
+
+.lang-option { 
+  flex: 1; 
+  z-index: 2; 
+  padding: 8px 0; 
+  color: #555; 
+  font-size: 0.85rem; 
+  text-align: center; 
+  cursor: pointer; 
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.lang-option.active { color: #fff; }
+
+.lang-bg-slider {
+  position: absolute;
+  top: 3px; 
+  left: 3px;
+  height: calc(100% - 6px);
+  width: calc(50% - 3px);
+  background: #8e44ad;
+  border-radius: 4px;
+  z-index: 1;
+  transition: transform 0.2s ease-in-out;
+}
+.lang-bg-slider.en-active { transform: translateX(100%); }
+
+@media (max-width: 1000px) {
+  .desktop-nav, .lang-selector { display: none; }
+  .hamburger { display: flex; }
+}

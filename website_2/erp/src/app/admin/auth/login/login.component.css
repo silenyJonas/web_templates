@@ -1,0 +1,244 @@
+/* Kontejner stránky */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 150px);
+  padding: 20px;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  color: #333333;
+}
+
+/* Nadpis sjednocený s tvým template */
+.login-container h2 {
+  color: #000000;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Box formuláře */
+.login-container form {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Skupiny polí */
+.login-container .form-group {
+  margin-bottom: 15px;
+}
+
+/* Label - přesně podle tvého vzoru */
+.login-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #333333;
+}
+
+/* OBĚ POLE JSOU TEĎ IDENTICKÁ - sjednoceno s tvým Generic Formem */
+#password, #email {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 0.95em;
+  box-sizing: border-box;
+  display: block; /* Zajišťuje stejné chování v mřížce */
+}
+
+/* Focus stav pro oba inputy */
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+/* Hlavní tlačítko - Černé */
+.login-container button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.login-container button[type="submit"]:hover {
+  background-color: #333333;
+}
+
+/* Tlačítko Zpět domů - Bílé s černým okrajem (identické s tvým button[type="button"]) */
+.login-container .back-to-home {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-container .home-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  font-size: 0.9em;
+  font-weight: bold;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+.login-container .home-button:hover {
+  background-color: #f0f0f0;/* Kontejner stránky pro přihlášení */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 150px);
+  padding: 20px;
+  background-color: #ffffff; /* Sjednoceno na bílou */
+  font-family: sans-serif;
+  color: #333333;
+}
+
+/* Nadpis sjednocený s .form-header h2 */
+.login-container h2 {
+  color: #000000;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Form box sjednocený s .generic-form-container */
+.login-container form {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Skupiny polí */
+.login-container .form-group {
+  margin-bottom: 15px;
+}
+
+/* Labely sjednocené s tvým vzorem */
+.login-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #333333;
+}
+
+/* Inputy sjednocené na černobílý standard */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 0.95em;
+  box-sizing: border-box;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+/* Hlavní tlačítko submit - černé, bílý text */
+.login-container button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+}
+
+.login-container button[type="submit"]:hover {
+  background-color: #333333;
+}
+
+/* Chybová hláška sjednocená s .error-message */
+.login-container .error-message {
+  padding: 10px;
+  background-color: #fff0f0;
+  border: 1px solid #ffcccc;
+  color: #d00000;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.85em;
+}
+
+/* Odkaz/tlačítko zpět domů - sjednoceno s button[type="button"] */
+.login-container .back-to-home {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-container .home-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  font-size: 0.9em;
+  font-weight: bold;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+}
+
+.login-container .home-button:hover {
+  background-color: #f0f0f0;
+}
+}
+
+/* Error message styl */
+.login-container .error-message {
+  padding: 10px;
+  background-color: #fff0f0;
+  border: 1px solid #ffcccc;
+  color: #d00000;
+  margin-top: 15px;
+  font-size: 0.85em;
+  text-align: center;
+}

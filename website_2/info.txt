@@ -1,0 +1,6 @@
+vice strankova webovka
+preklad textu
+edit textu z adminpanel
+prijimani formulare
+nutny hosting + db
+login a zabezpeceni sprava roli a hesel atd

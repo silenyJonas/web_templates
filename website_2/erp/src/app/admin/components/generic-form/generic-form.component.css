@@ -1,0 +1,321 @@
+/* Globální styly pro overlay a kontejner formuláře */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.form-container {
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  max-width: 700px;
+  width: 90%;
+  position: relative;
+  animation: fadeIn 0.3s ease-out;
+  border: 1px solid #dee2e6;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Hlavička formuláře */
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 0.5rem;
+}
+
+.form-header h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #adb5bd;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  padding: 0;
+}
+
+.close-button:hover {
+  color: #495057;
+}
+
+/* Dvousloupcové rozložení */
+.form-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Formulářová skupina */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 0.15rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Styly pro inputy, selecty a textarea */
+.form-control {
+  width: 100%;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  font-size: 0.85rem;
+  color: #444;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 1px #6366f1, 0 0 0 3px rgba(99, 102, 241, 0.2);
+  background-color: #fff;
+}
+
+/* Textarea zabírá oba sloupce */
+.form-group:has(textarea) {
+  grid-column: span 2;
+}
+
+textarea.form-control {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Styly pro validaci */
+.form-control.ng-invalid.ng-touched,
+.form-control.ng-invalid.ng-dirty {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 1px #dc3545, 0 0 0 3px rgba(220, 53, 69, 0.25);
+}
+
+.validation-message {
+  color: #dc3545;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+.required-star {
+  color: #dc3545;
+  margin-left: 2px;
+}
+
+.required-note {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-top: 1rem;
+}
+
+/* Styly pro radio a checkbox */
+.radio-group,
+.checkbox-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.radio-option {
+  font-weight: normal;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.radio-option input[type="radio"],
+.checkbox-container input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.4rem;
+  transform: scale(1.1);
+}
+
+/* Akční tlačítka a poznámka */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.required-note {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-right: auto;
+  margin-top: 0;
+  padding-top: 0.5rem;
+}
+
+/* Styly tlačítek */
+.submit-button,
+.cancel-button {
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.65rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: none;
+}
+
+/* Tlačítko Zrušit */
+.cancel-button {
+  background-color: #6c757d;
+}
+
+.cancel-button:hover {
+  background-color: #5a6268;
+}
+
+/* Tlačítko Potvrdit */
+.submit-button {
+  background-color: #28a745;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.submit-button:disabled {
+  background-color: #c8d1d8;
+  cursor: not-allowed;
+  opacity: 0.8;
+  border-color: transparent;
+}
+
+/* Doplňkové styly pro slider */
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.slider-value {
+  font-size: 0.85rem;
+  font-weight: 500;
+  min-width: 50px;
+  text-align: right;
+}
+
+/* Animace */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Nové styly pro needitovatelná pole */
+.form-control[disabled] {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.radio-option[disabled],
+.checkbox-container[disabled] {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+select[disabled],
+input[type="radio"][disabled] + label,
+input[type="checkbox"][disabled] + label {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+/* Původní styly */
+.form-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Nové styly pro omezení výšky a povolení posouvání */
+.form-columns {
+  max-height: 50vh; /* Omezení výšky na 50 % výšky okna prohlížeče */
+  overflow-y: auto; /* Povolení vertikálního posouvání, pokud je obsah větší */
+  padding-right: 1rem; /* Zabraňuje posuvníku překrývat obsah */
+}
+
+/* Přidat pro Firefox, aby se posuvník zobrazoval stejně */
+.form-columns {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+.form-columns::-webkit-scrollbar {
+  width: 8px;
+}
+
+.form-columns::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.form-columns::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+/* .locked-role {
+  border-color: red !important;
+  color: red !important;
+} */
+
+.locked-role-message {
+  color: #444;
+  font-size: 0.875rem;
+  margin-top: 5px;
+  padding-left: 2px;
+}
+.hidden-field {
+  display: none;
+}
+/* Zajištění správné responzivity */
+@media (max-width: 600px) {
+  .form-columns {
+    flex-direction: column;
+  }
+  .form-group {
+    width: 100%;
+  }
+}

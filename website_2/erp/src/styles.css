@@ -1,0 +1,156 @@
+/* Globální nastavení box-sizing */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+html.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+html {
+    box-sizing: border-box; 
+    /* overflow-x: hidden; - Nepotřebné zde, bude na body */
+
+    /* Stylování scrollbaru pro Webkit prohlížeče na úrovni HTML - Ponechat pokud chcete mít scrollbar na html elementu,
+       ale obvykle je lepší ho mít na body, pokud není jiný důvod */
+    &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+    &::-webkit-scrollbar-track {
+        background: rgba(17, 17, 31, 0.2);
+    }
+    &::-webkit-scrollbar-thumb {
+        background: linear-gradient(135deg, rgba(138, 43, 226, 0.4), rgba(0, 191, 255, 0.4));
+        border-radius: 10px; 
+        border: 1px solid rgba(17, 17, 31, 0.2); 
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(135deg, rgba(153, 50, 204, 0.6), rgba(30, 144, 255, 0.6));
+    }
+    &::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    /* Zde již není potřeba html.no-scroll, pokud cílíme na body */
+    /* html.no-scroll {
+        overflow: hidden !important;
+    } */
+}
+.services-info-text-2 p {
+    margin-bottom: 25px;
+    line-height: 1.7;
+    font-size: 1.2em;
+    color: #c0c0c0;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 480px) {
+     .services-info-text-2 p{
+        font-size: 1rem;
+    }
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden; /* Jen pro horizontální scroll */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; 
+}
+p, li, span {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+button, .nav-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+
+
+/* Standardní třídy pro kurzory - v pořádku */
+a { cursor: pointer; }
+button { cursor: pointer; }
+input, textarea { cursor: text; }
+[draggable="true"] { cursor: grab; }
+.clickable-div { cursor: pointer; }
+
+/* Barevné třídy - v pořádku */
+.blue { background-color: blue; }
+.green { background-color: green; }
+.black { background-color: black; }
+.yellow { background-color: yellow; }
+.white { background-color: white; }
+.red { background-color: red; }
+
+/* Styly pro jednotlivé typy tlačítek */
+.info_button {
+    padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.65rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  background-color: #007bff; /* modrá */
+  color: white;
+}
+
+.info_button:hover {
+  background-color: #0056b3;
+}
+
+.neutral_button {
+    padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.65rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  background-color: #6c757d; /* šedá */
+  color: white;
+}
+
+.neutral_button:hover {
+  background-color: #5a6268;
+}
+
+.delete_button {
+    padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.65rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  background-color: #dc3545; /* červená */
+  color: white;
+}
+
+.delete_button:hover {
+  background-color: #c82333;
+}
+
+.confirm_button {
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.65rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  background-color: #28a745; /* zelená */
+  color: white;
+}
+
+.confirm_button:hover {
+  background-color: #218838;
+}
