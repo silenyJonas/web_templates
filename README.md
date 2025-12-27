@@ -2,8 +2,9 @@
 
 | Projekt | Singlepage | Admin Login | Úprava textu (i18n) | Formulář |
 | :--- | :---: | :---: | :---: | :---: |
-| **Website_1** | ✅ | ✅ | ✅ (přes Laravel API) | ✅ |
-| **Website_2** | ✅ | ✅ | ❌ | ✅ |
+| **Website_1** | ❌ | ✅ | ✅ | ✅ |
+| **Website_2** | ❌ | ✅ | ✅ | ❌ |
+
 | **Website_3** | ❌ | ✅ | ✅ | ✅ |
 | **Website_4** | ✅ | ❌ | ❌ | ✅ |
 | **Website_5** | ❌ | ✅ | ✅ | ❌ |
